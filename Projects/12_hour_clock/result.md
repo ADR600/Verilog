@@ -1,3 +1,4 @@
+### Clock is of period 1 second
 ### Reset and count to 10
 ![image](https://github.com/user-attachments/assets/64b7cd20-59cc-4d82-a117-d8d545225bb6)
 
