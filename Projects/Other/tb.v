@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   14:17:21 04/29/2025
+// Create Date:  
 // Design Name:   fibonacci_series
-// Module Name:   /mnt/disk2/Documents/Verilog_labs/review/coding test/fibonacci_series/fibonacci_series_tb.v
+// Module Name:   
 // Project Name:  fibonacci_series
 // Target Device:  
 // Tool versions:  
