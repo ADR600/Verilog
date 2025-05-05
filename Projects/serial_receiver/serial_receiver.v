@@ -1,3 +1,12 @@
+//bit format for proper serial transmission
+// 1 bit start  =0
+//8 bit data 
+// 1 bit for odd parity 
+//1 bit for stop =1
+// done only high when data transmitted correctly and passes parity check 
+// output valid when done=1
+
+
 module top_module(
     input clk,
     input in,
