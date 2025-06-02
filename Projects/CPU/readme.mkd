@@ -47,7 +47,7 @@ Ex: D=M translates to 1 11 1 110000010000
 
 <b> HACK Assembly Code Executed </b>
 
-`asm`
+`HACK ASM`
 
 ```asm
 @0
