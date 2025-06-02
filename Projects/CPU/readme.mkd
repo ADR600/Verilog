@@ -37,4 +37,9 @@ Ex: D=M translates to 1 11 1 110000010000
  { A,D,M} = 3'b010 -> update D only 
  {j1,j2,j3) = 3'b000 -> no jump ,increment pc only 
 
+## Link to Verilog Code 
+
+## Credits 
+1. nand2tetris-Coursera , best course on coursera 
+2. www.nand2tetris.org
 
