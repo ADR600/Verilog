@@ -23,6 +23,7 @@ In the symbolic notation i.e assembly code it is represented by
 Ex: @5 ---> 0 000000000000101 // update A_reg=5, M points to different location in memory(RAM[5])
 An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit represent a memory location to update A register with .
 
+
 <b>C instruction</b> - it is idenfitied by msb bit=1. It can do computation, updating A,D and M register and jump to some other instruction.
 In the symbolic notation i.e assembly code there are different ways to represent C instruction 
 The different so called parts of C Instruction are : 1 11 a c1c2c3c4c5c6 d1d2d3 j1j2j3
