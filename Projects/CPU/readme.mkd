@@ -48,12 +48,11 @@ Ex: D=M translates to 1 11 1 110000010000
 <b> HACK Assembly Code Executed </b>
 
 <b> @0
+
 D=M
 
 @1
-
 D=M
-
 @2
 
 D=M
@@ -95,7 +94,6 @@ D=A
 @24
 
 0;JMP
-
 </b>
 
 
