@@ -46,11 +46,16 @@ Ex: D=M translates to 1 11 1 110000010000
 ![image](https://github.com/user-attachments/assets/27318cd9-39f1-43b9-af0b-13260ae3dd56)
 
 <b> Code Executed at the moment </b>
+
 <b> @0
 D=M
+
 @1
+
 D=M
+
 @2
+
 D=M
 @3
 D=M
