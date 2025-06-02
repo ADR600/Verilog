@@ -1,10 +1,10 @@
 # HACK Architecure Implementation
-This is an CPU that I have implemented using the HACK Architecutre . HACK Architecture is a theoritical architecures for general purpose computers. The design uses 16 bit as atomic unit of information in other words its a 16 bit processor .
-The general structure of the HACK Computer so as to say is as follows :
-It has a Central Processing Unit, a RAM and a ROM at its core. 
-The cpu has all necessary parts for basic functioning like a control unit (aka Program Counter) an ALU unit and some internal register within it for storing the data .This specific architecture makes use of 2 registers in CPU named A Register and D Register.
-A register stores address of instruction and D register stores data.As a part of ISA(Instruction Set Architecure) there is another register that is directly refered i.e M register which refers to RAM[A] ,basically RAM location pointed by value in A register.
-This is no actual sepearte register in CPU but a reference for currently accesssed memory location .
+HACK Architecture is a theoritical architecures for general purpose computers created by Noam Nisan and Shimon Schocken . It is meant to be an representation of an actual computer with basic functionality . I was introduced to this as a part of nand2tetris course which I had taken up on Coursera.The design uses 16 bit as atomic unit of information i.e its a 16 bit computer .
+The HACK Architecture comprised of 3 main parts : A Central Processing Unit, a RAM and a ROM at its core. 
+
+1.The cpu has all necessary parts for basic functioning like a control unit (aka Program Counter) an ALU unit and some internal register within it for storing the data .This specific architecture makes use of 2 registers in CPU named A Register and D Register.A register stores address of instruction and D register stores data.As a part of ISA(Instruction Set Architecure) there is another register that is directly refered i.e M register which refers to RAM[A] ,basically RAM location pointed by value in A register.This is no actual sepearte register M in CPU , its just a reference for currently accesssed memory location .
+2.The RAM consists of 3 parts, made from 3 different chips, an 16K memory chip for regular operation, an 8k screen chip as a screen memory map and an dedciated 16 bit register which probles the keyboard.
+3.The ROM used is 32k deep and 2 bytes long. It contains the instrucion which on reste are executed from instruction 0 (instruction at address0).To check functionaility of cpu and verify its output I have dumped machine code in a .mem file and loaded it into ROM usig verilog $readmemb during simualtion.
 
 ## Instruction Set of HACK Architecutre
 The instruction set recognises 2 types of instruction.A instruction and C instruction . A instruction means address instruction.C instruction means compute insturction. C instruction is used to update  control bits of ALU .The basic idea from here is A instruction is used to fetch data from right memory and C instruction is used to do computation .Below i have clearly explained the functionality and use case of each instruction .
@@ -15,7 +15,7 @@ In the symbolic notation i.e assembly code it is represented by
 Ex: @5 ---> 0 000000000000101 // update A_reg=5, M points to different location in memory(RAM[5])
 An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit represent a memory location to update A register with .
 
-C instruction - it is idenfitied by msb bit=1. It can do computation, updating A,D and M register and jump to some other instruction.
+<b>C instruction</b> - it is idenfitied by msb bit=1. It can do computation, updating A,D and M register and jump to some other instruction.
 In the symbolic notation i.e assembly code there are different ways to represent C instruction 
 The different so called parts of C Instruction are : 1 11 a c1c2c3c4c5c6 d1d2d3 j1j2j3
 where 1 (msb) represent an opcode of 1 ,its a C instruction 
@@ -30,4 +30,5 @@ Ex: D=M translates to 1 11 1 110000010000
  { zx,nx,zy,ny,f,no } = 6'b110000 -> output of alu i.e outM = M
  { A,D,M} = 3'b010 -> update D only 
  {j1,j2,j3) = 3'b000 -> no jump ,increment pc only 
+
 
