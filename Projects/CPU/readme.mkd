@@ -9,7 +9,8 @@ The HACK Architecture comprised of 3 main parts : A Central Processing Unit, a R
 3. The ROM used is 32k deep and 2 bytes long. It contains the instrucion which on reste are executed from instruction 0 (instruction at address0).To check functionaility of cpu and verify its output I have dumped machine code in a .mem file and loaded it into ROM usig verilog $readmemb during simualtion.
 
    
-![Architecure_Diagram](https://github.com/user-attachments/assets/42ba3bbe-fffa-473f-ad1c-065eaa9673f8)
+![Architecture drawio](https://github.com/user-attachments/assets/e547465a-1a4c-4c86-a4e2-148eb34c25d1)
+
 
 
 ## Instruction Set of HACK Architecutre
