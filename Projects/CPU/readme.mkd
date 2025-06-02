@@ -19,6 +19,7 @@ The instruction set recognises 2 types of instruction.A instruction and C instru
 <b> A instruction</b> - is identified by its msb bit=0. It is used to update the A register which updates the location pointed by "M register"
 In the symbolic notation i.e assembly code it is represented by 
 @value 
+
 Ex: @5 ---> 0 000000000000101 // update A_reg=5, M points to different location in memory(RAM[5])
 An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit represent a memory location to update A register with .
 
@@ -26,12 +27,14 @@ An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit r
 In the symbolic notation i.e assembly code there are different ways to represent C instruction 
 The different so called parts of C Instruction are : 1 11 a c1c2c3c4c5c6 d1d2d3 j1j2j3
 where 1 (msb) represent an opcode of 1 ,its a C instruction 
+
 The next two bits are for higher implementation , not used in hardware design 
 a is select bit used to select input to ALU . One input to alu is D regsiter the other input to ALU is selected between inM (from memory,M) and A register .a=0 select A register.
 c bits are control bits of ALU used to control ALU to perform different operation 
 d bits are destination register -- do i write to A,D,M register ?? . The output from ALU is conditionally written onto A,D or memory based on d bits.
  say d=010 --> update A =no, update D=yes , update M =0
 j bits are jump bits used to jump to different instruction
+
 Ex: D=M translates to 1 11 1 110000010000
  a=1 select M register 
  { zx,nx,zy,ny,f,no } = 6'b110000 -> output of alu i.e outM = M
