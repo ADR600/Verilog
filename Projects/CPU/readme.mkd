@@ -1,0 +1,20 @@
+This is an CPU that I have implemented using the HACK Architecutre . HACK Architecture is a theoritical architecures for general purpose computers. The design uses 16 bit as atomic unit of information in other words its a 16 bit processor .
+The general structure of the HACK Computer so as to say is as follows :
+It has a Central Processing Unit, a RAM and a ROM at its core. 
+The cpu has all necessary parts for basic functioning like a control unit (aka Program Counter) an ALU unit and some internal register within it for storing the data .This specific architecture makes use of 2 registers in CPU named A Register and D Register.
+A register stores address of instruction and D register stores data.As a part of ISA(Instruction Set Architecure) there is another register that is directly refered i.e M register which refers to RAM[A] ,basically RAM location pointed by value in A register.
+This is no actual sepearte register in CPU but a reference for currently accesssed memory location .
+The instruction set recognises 2 types of instruction.A instruction and C instruction . 
+
+A instruction - is identified by its msb bit=0. It is used to update the A register which updates the location pointed by "M register"
+In the symbolic notation i.e assembly code it is represented by 
+@value 
+Ex: @5 ---> 0 000000000000101 // update A_reg=5, M points to different location in memory(RAM[5])
+An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit represent a memory location to update A register with .
+
+C instruction - it is idenfitied by msb bit=1. It can do computation, updating A,D and M register and jump to some other instruction.
+In the symbolic notation i.e assembly code there are different ways to represent C instruction 
+
+The different so called parts of C Instruction are : 1 11 a c1c2c3c4c5c6 d1d2d3 j1j2j3
+where 1 (msb) represent an opcode of 1 ,its a C instruction 
+D=M;
