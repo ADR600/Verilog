@@ -1,12 +1,15 @@
+# HACK Architecure Implementation
 This is an CPU that I have implemented using the HACK Architecutre . HACK Architecture is a theoritical architecures for general purpose computers. The design uses 16 bit as atomic unit of information in other words its a 16 bit processor .
 The general structure of the HACK Computer so as to say is as follows :
 It has a Central Processing Unit, a RAM and a ROM at its core. 
 The cpu has all necessary parts for basic functioning like a control unit (aka Program Counter) an ALU unit and some internal register within it for storing the data .This specific architecture makes use of 2 registers in CPU named A Register and D Register.
 A register stores address of instruction and D register stores data.As a part of ISA(Instruction Set Architecure) there is another register that is directly refered i.e M register which refers to RAM[A] ,basically RAM location pointed by value in A register.
 This is no actual sepearte register in CPU but a reference for currently accesssed memory location .
-The instruction set recognises 2 types of instruction.A instruction and C instruction . 
 
-A instruction - is identified by its msb bit=0. It is used to update the A register which updates the location pointed by "M register"
+## Instruction Set of HACK Architecutre
+The instruction set recognises 2 types of instruction.A instruction and C instruction . A instruction means address instruction.C instruction means compute insturction. C instruction is used to update  control bits of ALU .The basic idea from here is A instruction is used to fetch data from right memory and C instruction is used to do computation .Below i have clearly explained the functionality and use case of each instruction .
+
+<b> A instruction</b> - is identified by its msb bit=0. It is used to update the A register which updates the location pointed by "M register"
 In the symbolic notation i.e assembly code it is represented by 
 @value 
 Ex: @5 ---> 0 000000000000101 // update A_reg=5, M points to different location in memory(RAM[5])
@@ -14,7 +17,17 @@ An A instruction has 2 parts the msb bit represent opcode and remaining 15 bit r
 
 C instruction - it is idenfitied by msb bit=1. It can do computation, updating A,D and M register and jump to some other instruction.
 In the symbolic notation i.e assembly code there are different ways to represent C instruction 
-
 The different so called parts of C Instruction are : 1 11 a c1c2c3c4c5c6 d1d2d3 j1j2j3
 where 1 (msb) represent an opcode of 1 ,its a C instruction 
-D=M;
+The next two bits are for higher implementation , not used in hardware design 
+a is select bit used to select input to ALU . One input to alu is D regsiter the other input to ALU is selected between inM (from memory,M) and A register .a=0 select A register.
+c bits are control bits of ALU used to control ALU to perform different operation 
+d bits are destination register -- do i write to A,D,M register ?? . The output from ALU is conditionally written onto A,D or memory based on d bits.
+ say d=010 --> update A =no, update D=yes , update M =0
+j bits are jump bits used to jump to different instruction
+Ex: D=M translates to 1 11 1 110000010000
+ a=1 select M register 
+ { zx,nx,zy,ny,f,no } = 6'b110000 -> output of alu i.e outM = M
+ { A,D,M} = 3'b010 -> update D only 
+ {j1,j2,j3) = 3'b000 -> no jump ,increment pc only 
+
