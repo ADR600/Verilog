@@ -5,7 +5,6 @@ But like SPI it is a serial protocol meaning it sends its data 1 bit at a time. 
 
 In this implementation there is no paritu bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 ```
-#### (dvsr +1 )*16 = frequency 
 
 (dvsr + 1) * 16 = frequency
 
@@ -17,15 +16,23 @@ Where:
 - v : divisor (dvsr)
 - b : baud rate
 - f : input clock frequency (Hz)
+
 ```
 
 To achieve synchrnonization between transmitter and receiver we use concept of oversampling . 
 In my case I have used 16x Oversampling. Which is obvisous from the equation.  Meaning the bit send by the sender changes every 16 ticks (1 tick is 0 to dvsr).
-The         
--- no parity 
--- start bit
--- stop bit
--- clock 
+
+### Features of UART Implemented
+```
+
+8 bit data ( can be 6 ,7, bits long)
+1 start,stop bit
+no parity bit
+stop bit is of 1 bit wide (can be 1.5 or 2 bits long)
+Changeable  baud rate using dvsr
+Oversampling  16x
+
+```
 
 Transmitter 
 ------------
