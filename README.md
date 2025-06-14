@@ -7,7 +7,7 @@ Hello visitor !! This is collection of some of my hardware projects that i have 
 
 ## HACK Architecture
 
-The **HACK architecture** is a minimalist 16-bit computer system introduced in the book *The Elements of Computing Systems* (*Nand2Tetris*). It serves as an educational platform for understanding the fundamentals of computer architecture from the ground up.For more information [Click](https://github.com/ADR600/Verilog/blob/8aec3fdd99b410b262b0ab4a88e75beb0cd07b17/Projects/CPU/readme.mkd)
+The **HACK architecture** is a minimalist 16-bit computer system introduced in the book *The Elements of Computing Systems* (*Nand2Tetris*). It serves as an educational platform for understanding the fundamentals of computer architecture from the ground up.For more information [Click](https://github.com/ADR600/Verilog/tree/8aec3fdd99b410b262b0ab4a88e75beb0cd07b17/Projects/CPU)
 
 ###  Key Characteristics
 
