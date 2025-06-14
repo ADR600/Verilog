@@ -23,7 +23,7 @@ Where:
 To achieve synchrnonization between transmitter and receiver we use concept of oversampling . 
 In my case I have used 16x Oversampling. Which is obvisous from the equation.  Meaning the bit send by the sender changes every 16 ticks (1 tick is 0 to dvsr).
 
-### Features of UART Implemented
+### Features of this UART Implemented
 ```
 
 8 bit data ( can be 6 ,7, bits long)
