@@ -29,7 +29,7 @@ This project includes a synthesizable Verilog implementation of the HACK CPU, in
   
 ![Architecture drawio](https://github.com/user-attachments/assets/e547465a-1a4c-4c86-a4e2-148eb34c25d1)
 
-General architecutre of HACK Computer (Made using Draw.io)
+General architecutre of HACK Computer 
 
 ---
 
@@ -61,7 +61,7 @@ This UART design features:
 
 ![UART_BLOCK_DIAGRAM drawio](https://github.com/user-attachments/assets/6fb0195c-0ae1-4259-8a9a-2d1bfad3147b)
 
-High level diagram of Implementation (Made using Draw.io)
+High level diagram of Implementation
 
 ---
 
