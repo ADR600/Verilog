@@ -6,7 +6,7 @@ In this implementation there is no paritu bit.In my design the baud rate can be 
 
 (dvsr +1 )*16 = frequency 
 
-   ### $v = \frac{f}{16 \times b} - 1$
+   ## $v = \frac{f}{16 \times b} - 1$
 
 v is dvsr
 b - baud rate 
