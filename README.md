@@ -28,11 +28,13 @@ This project includes a synthesizable Verilog implementation of the HACK CPU, in
 * HACK Assembly Language
   
 ![Architecture drawio](https://github.com/user-attachments/assets/e547465a-1a4c-4c86-a4e2-148eb34c25d1)
+
+General architecutre of HACK Computer 
 ---
 
 ## UART (Universal Asynchronous Receiver/Transmitter)
 
-**UART** is a serial communication protocol that transmits data one bit at a time without a clock signal. It is ideal for low-complexity and low-speed communication between devices.
+**UART** is a serial communication protocol that transmits data one bit at a time without a clock signal. It is ideal for low-complexity and low-speed communication between devices.For more info [Click](https://github.com/ADR600/Verilog/tree/6a72bcf60e223d0f056dbea5b36ae2417b552284/Projects/UART%20Protocol)
 
 This UART design features:
 
