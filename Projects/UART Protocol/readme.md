@@ -1,3 +1,4 @@
+# UART 
 UART stands for Universl Asynchronous Receiver Transmitter. Meaning it doesnt need clock to operate . 
 Unlike SPI where the master sends clock (spi clock) along with data for synchrnoisation in UART there is no clock. 
 The communication works on agreed Baud Rate and Frequency.
