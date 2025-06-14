@@ -6,9 +6,16 @@ In this implementation there is no paritu bit.In my design the baud rate can be 
 
 #### (dvsr +1 )*16 = frequency 
 
-## 📐 UART Baud Rate Formula
+(dvsr + 1) * 16 = frequency
 
-![formula](https://latex.codecogs.com/png.image?\dpi{150}&space;v=\frac{f}{16\times b}-1)
+         f
+v = -----------  - 1
+       16 × b
+
+Where:
+- v : divisor (dvsr)
+- b : baud rate
+- f : input clock frequency (Hz)
 
 
  v is dvsr
