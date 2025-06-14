@@ -1,9 +1,70 @@
-# Verilog
-![image](https://github.com/user-attachments/assets/f0ef83bb-f136-406c-9509-ab09a33ea217)
-
-
-This is collection of some of many verilog design code with testbenches \
-Click on [Project](Projects) 
-
+# My Project 
+Hello visitor !! This is collection of some of my hardware projects that i have implemeneted and tested using verilog and system verilog . To get detailed collection of all my project click  [Project](Projects) .
 
 ![image](https://github.com/user-attachments/assets/93364e84-5c28-4498-96c7-7327b9a65749)
+
+---
+
+## HACK Architecture
+
+The **HACK architecture** is a minimalist 16-bit computer system introduced in the book *The Elements of Computing Systems* (*Nand2Tetris*). It serves as an educational platform for understanding the fundamentals of computer architecture from the ground up.
+
+###  Key Characteristics
+
+* **16-bit word size**
+* **Two-instruction ISA**:
+
+  * `A-instruction`: Load constant/address into the A-register
+  * `C-instruction`: Perform computation and control memory/registers
+* Simple **ALU** supporting arithmetic and logic
+* **Memory-mapped I/O** for basic peripheral interaction (screen & keyboard)
+* Clean separation of **instruction memory (ROM)** and **data memory (RAM)**
+
+This project includes a synthesizable Verilog implementation of the HACK CPU, including:
+
+* Instruction decoding
+* ALU logic
+* Control signals and timing
+* HACK Assembly Language
+
+---
+
+## UART (Universal Asynchronous Receiver/Transmitter)
+
+**UART** is a serial communication protocol that transmits data one bit at a time without a clock signal. It is ideal for low-complexity and low-speed communication between devices.
+
+This UART design features:
+
+### Core Components
+
+* **Transmitter (TX)**
+
+  * Converts 8-bit parallel data to serial
+  * Uses start bit, data bits, and stop bit format
+  * Includes a **TX FIFO** for queuing data, enabling non-blocking transmission
+
+* **Receiver (RX)**
+
+  * Detects and reconstructs serial data into 8-bit parallel format
+  * Employs **16x oversampling** for robust bit alignment and noise immunity
+  * Stores received bytes in a **RX FIFO**, decoupling timing from the main system
+
+* **Baud Rate Generator**
+
+  * Derives UART tick pulses from a system clock (e.g., 100 MHz)
+  * Supports standard baud rates (e.g., 9600, 19200, 115200)
+  * Controls timing for both TX and RX based on a divisor (`dvsr`)
+
+---
+
+## Project Highlights
+
+* Full Verilog implementation of HACK CPU and UART communication stack
+* FIFO buffering in both TX and RX paths
+* Modular, synthesizable, and reusable components
+* Self-checking testbenches for verification
+* Ready for integration into custom SoC or FPGA-based designs
+
+---
+
+
