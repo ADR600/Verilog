@@ -8,9 +8,6 @@ But like SPI it is a serial protocol meaning it sends its data 1 bit at a time. 
 
 Image from  : Wikipedia 
 
-
-
-
 In this implementation there is no parity bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 ```
 
