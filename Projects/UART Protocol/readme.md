@@ -8,9 +8,9 @@ In this implementation there is no paritu bit.In my design the baud rate can be 
 
    ## $v = \frac{f}{16 \times b} - 1$
 
-v is dvsr
-b - baud rate 
-f - frequency 
+## v is dvsr
+## b - baud rate 
+## f - frequency 
 
 To achieve synchrnonization between transmitter and receiver we use concept of oversampling . 
 In my case I have used 16x Oversampling. Which is obvisous from the equation.  Meaning the bit send by the sender changes every 16 ticks (1 tick is 0 to dvsr).
