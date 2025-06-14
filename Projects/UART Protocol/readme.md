@@ -4,6 +4,8 @@ Unlike SPI where the master sends clock (spi clock) along with data for synchrno
 The communication works on agreed Baud Rate and Frequency.
 But like SPI it is a serial protocol meaning it sends its data 1 bit at a time. An 8 bit data is generally send with framing bits like start, stop bit .Parity may or may not be included . 
 
+![image](https://github.com/user-attachments/assets/ae42d517-37d2-435e-8858-19b14eabf00f)
+### Credit : Wikipedia 
 In this implementation there is no paritu bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 ```
 
