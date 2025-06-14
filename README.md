@@ -6,5 +6,4 @@ This is collection of some of many verilog design code with testbenches \
 Click on [Project](Projects) 
 
 
-
-![image](https://github.com/user-attachments/assets/2b2b618e-1308-4ddf-8b0a-2d12fb73c01e)
+![image](https://github.com/user-attachments/assets/93364e84-5c28-4498-96c7-7327b9a65749)
