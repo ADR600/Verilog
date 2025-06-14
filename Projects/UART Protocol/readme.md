@@ -36,5 +36,10 @@ Oversampling  16x
 ```
 
 ### Thanks to  
+https://www.youtube.com/@anassalaheddin1258
+
 https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
+
 https://www.rohde-schwarz.com/us/products/test-and-measurement/essentials-test-equipment/digital-oscilloscopes/understanding-uart_254524.html
+
+
