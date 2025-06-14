@@ -2,10 +2,11 @@ UART stands for Universl Asynchronous Receiver Transmitter. Meaning it doesnt ne
 Unlike SPI where the master sends clock (spi clock) along with data for synchrnoisation in UART there is no clock. 
 The communication works on agreed Baud Rate and Frequency.
 But like SPI it is a serial protocol meaning it sends its data 1 bit at a time. An 8 bit data is generally send with framing bits like start, stop bit .Parity may or may not be included . 
-In this implementation there is no paritu bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 
-#### (dvsr +1 )*16 = frequency 
+In this implementation there is no paritu bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 ```
+#### (dvsr +1 )*16 = frequency 
+
 (dvsr + 1) * 16 = frequency
 
          f
