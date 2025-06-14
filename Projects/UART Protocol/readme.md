@@ -39,6 +39,9 @@ Oversampling  16x
 
 ```
 
+![UART_BLOCK_DIAGRAM drawio](https://github.com/user-attachments/assets/86e000c4-0d0d-4acf-afc5-9fc452f10016)
+
+
 ### Special Thanks to 
 
 Eddin , best lectures ,can listen all day : https://www.youtube.com/@anassalaheddin1258
