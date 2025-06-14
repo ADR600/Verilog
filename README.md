@@ -28,7 +28,6 @@ This project includes a synthesizable Verilog implementation of the HACK CPU, in
 * HACK Assembly Language
   
 ![Architecture drawio](https://github.com/user-attachments/assets/e547465a-1a4c-4c86-a4e2-148eb34c25d1)
-
 General architecutre of HACK Computer 
 ---
 
