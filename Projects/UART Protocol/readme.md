@@ -35,9 +35,9 @@ Oversampling  16x
 
 ```
 
-### Thanks to  
+### Special Thanks to 
 
- Can listen to his lectures all  day!! : https://www.youtube.com/@anassalaheddin1258
+Best lectures can listen all day : https://www.youtube.com/@anassalaheddin1258
 
 General info :https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
 
