@@ -8,9 +8,9 @@ In this implementation there is no paritu bit.In my design the baud rate can be 
 
 (dvsr + 1) * 16 = frequency
 
-         f
-v = -----------  - 1
-       16 × b
+   ###       f
+### v = -----------  - 1
+    ###    16 × b
 
 Where:
 - v : divisor (dvsr)
