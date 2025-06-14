@@ -1,15 +1,23 @@
 ```
+------------------------------
 Top module 
 ------------------------------
-Transmitter --> Receiver 
+
+Transmitter --> Receiver
 
 ------------------------------
-Receiver 
+------------------------------
+
+Receiver
+------------------------------
   Receiver FSM 
   FIFO 
   Baud Rate Generator
 ------------------------------
-Transmitter 
+------------------------------
+
+Transmitter
+------------------------------
   Transmitter FSM 
   FIFO 
   Baud Rate Generator
