@@ -41,7 +41,7 @@ Oversampling  16x
 
 ### Special Thanks to 
 
-Best lectures can listen all day : https://www.youtube.com/@anassalaheddin1258
+Eddin , best lectures ,can listen all day : https://www.youtube.com/@anassalaheddin1258
 
 General info :https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
 
