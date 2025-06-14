@@ -5,7 +5,7 @@ The communication works on agreed Baud Rate and Frequency.
 But like SPI it is a serial protocol meaning it sends its data 1 bit at a time. An 8 bit data is generally send with framing bits like start, stop bit .Parity may or may not be included . 
 
 ![image](https://github.com/user-attachments/assets/ce4d090b-ae72-4618-be5a-a5a85e03683b)
-                         Image from  : Wikipedia 
+         Image from  : Wikipedia 
 In this implementation there is no paritu bit.In my design the baud rate can be chnaged indirectly using dvsr which is given as
 ```
 
