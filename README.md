@@ -61,13 +61,6 @@ This UART design features:
 
 ---
 
-## Project Highlights
-
-* Full Verilog implementation of HACK CPU and UART communication stack
-* FIFO buffering in both TX and RX paths
-* Modular, synthesizable, and reusable components
-* Self-checking testbenches for verification
-* Ready for integration into custom SoC or FPGA-based designs
 
 ---
 
