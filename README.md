@@ -1,5 +1,5 @@
 # My Projects
-Hello visitor !! This is collection of some of my hardware projects that i have implemeneted and tested using verilog and system verilog . To get detailed collection of all my project click  [Project](Projects) .
+Hello visitor !! I am Ankith and this is collection of some of my hardware projects that I have implemeneted and tested using verilog and system verilog . To get detailed collection of all my project click  [Project](Projects) .
 
 ![image](https://github.com/user-attachments/assets/93364e84-5c28-4498-96c7-7327b9a65749)
 
