@@ -1,7 +1,7 @@
 class test extends uvm_test;
   `uvm_component_utils(test)
   confg cfg;
-  write_seqs seqh;
+  virtual_sequence seqh;
   env envh;
   
   function new (string name = "test", uvm_component parent);
@@ -18,8 +18,9 @@ class test extends uvm_test;
   
   task run_phase (uvm_phase phase);
     phase.raise_objection(this);
-    seqh = write_seqs :: type_id :: create ("seqh");
-    seqh.start(envh.wagt.seqr);
+    seqh = virtual_sequence :: type_id :: create ("seqh");
+    seqh.start(envh.vseqr);
     phase.drop_objection(this);
   endtask 
+  
 endclass 
