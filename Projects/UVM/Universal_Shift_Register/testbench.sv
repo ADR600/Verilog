@@ -1,5 +1,6 @@
 // Code your testbench here
 // or browse Examples
+
 `include "uvm_macros.svh"
 import uvm_pkg :: *;
 
@@ -14,8 +15,10 @@ import uvm_pkg :: *;
 `include "write_agent.sv"
 `include "read_agent.sv"
 `include "scoreboard.sv"
+`include "virtual_sequencer.sv"
 `include "env.sv"
 
+`include "virtual_sequence.sv"
 `include "test.sv"
 
 module tb;
