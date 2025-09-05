@@ -48,3 +48,12 @@ uvm_test_top               test                        -     @340
         num_last_rsps      integral                    32    'd1  
 ------------------------------------------------------------------
 ```
+## FINAL OUTPUT 
+```
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/rd_monitor.sv(59) @ 4937151000: uvm_test_top.envh.ragt.monh [monh] Data sent by read monitor 11
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/scoreboard.sv(70) @ 4937151000: uvm_test_top.envh.sb [SCOREBOARD] Data Verified 10
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/scoreboard.sv(71) @ 4937151000: uvm_test_top.envh.sb [SCOREBOARD] Data Missmatch 0
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/scoreboard.sv(72) @ 4937151000: uvm_test_top.envh.sb [SCOREBOARD] Write Coverage 100.000000
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/scoreboard.sv(73) @ 4937151000: uvm_test_top.envh.sb [SCOREBOARD] Read Coverage 100.000000
+UVM_INFO C:/----/UART Protocol/UART Protocol.srcs/sim_1/new/wr_monitor.sv(49) @ 4937151000: uvm_test_top.envh.wagt.monh [monh] Data sent by write monitor 10
+```
